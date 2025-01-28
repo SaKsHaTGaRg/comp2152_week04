@@ -174,10 +174,17 @@ print("Your belt is: " , belt)
 
 # lab04 q6 - item 2
 input("Roll for first item (press enter)")
-lootRoll = random.choice(1,len(loot_options) + 1)
+lootRoll = random.choice(1 , len(loot_options) + 1)
 loot = loot_options.pop(lootRoll - 1)
 belt.append(loot)
 print("Your belt is: " , belt)
+
+
+# lab04 q7
+print("You're neat , so organize your belt alphabetically ")
+belt.sort()
+print("your belt:" , belt)
+
 
 
 
